@@ -1,10 +1,13 @@
 #Дано трехзначное число. Производится вывод его последней цифры (единицы), а затем — его средней цифры (десятки).
 num = 123
 
-num_str = str(num)
+if 100 <= num <= 999:
+    num_str = str(num)
 
-last_dig = num_str[2]
-print(f"Последняя цифра: {last_dig}")
+    last_dig = num_str[2]
+    print(f"Последняя цифра: {last_dig}")
 
-mid_dig = num_str[1]
-print(f"Средняя цифра: {mid_dig}")
+    mid_dig = num_str[1]
+    print(f"Средняя цифра: {mid_dig}")
+else:
+    print("Ошибка: Число не трехзначное!")
